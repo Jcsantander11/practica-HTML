@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <meta name="description" content="breve descripcion">
+    <meta name="author" content="Nombre del sitio web">
+
+    <!--Open graph protocol-->
+    <meta property="og:site_name" content="Informatic">
+    <meta property="og:image" content="imagen.png">
+    <meta property="og:title" content="Nuestro menu">
+    <meta property="og:description" content="Breve descripcion">
+    <meta property="og:type" content="sitio web">
+    <meta property="og:url" content="https://www.misitio">
+    <meta property="og:locale" content="en_US"><!--define la confiuracion regional--> 
+
+
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <!--Incluir archivo css-->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <!--agregar nombre del sitio web o logo-->
+        <h1>Mi pagina web</h1>
+    </header>    
+    <nav>
+        <!--Agregar la navegacion del sitio web-->
+        <label for="menu-toogle" class="menu-icon">=</label>
+        <input type="checkbox" id="menu-toogle" class="menu-toogle">
+        <ul>
+            <li><a href="#texto">Texto y listas</a></li>
+            <li><a href="#tablas">Tablas</a></li>
+            <li><a href="#multimedia">Multimedia</a></li>
+            <li><a href="#formulario">Formularios</a></li>
+            <li><a href="#semantica">Semantica</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!--agregar el contenido principal-->
+
+        <!--MULTIMEDIA-->
+        <section id="multimedia">
+            <h2>Multimedia</h2>
+            <h3>Imagenes</h3>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Eiffelturm.JPG/275px-Eiffelturm.JPG" alt="Imagen torre eiffel" width="200" height="200">
+            <h2>Audio</h2>
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+                No soporta el audio
+            </audio>
+            <h2>Video</h2>
+            <video controls width="250">
+                <source src="video.mp4" type="audio/mp4">
+                No soporta el video
+            </video>
+        </section>
+
+        <!--FORMULARIO-->
+        <section id="formulario">
+            <h2>Formulario</h2>
+            <form action="#formulario">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre"><br>
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password">
+                <input type="radio" name="genero" id="masculino" value="masculino">
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="genero" id="femenino" value="masculino">
+                <label for="femenino">Femenino</label>
+                <label for="cargo">Cargo</label>
+                <select id="cargo" name="cargo">
+                    <option value="1">Desarrollador</option>
+                    <option value="2">Administrador</option>
+                    <option value="3">Contador</option>
+                </select>
+                <input type="checkbox" name="terminos" id="terminos">
+                <label for="">Terminos y condiciones</label><br>
+                <button type="submit">enviar</button>
+            </form>
+        </section>
+
+        <!--Etiquetas semanticas-->
+        <section id="semantica">
+            <h2>Etiquetas semanticas</h2>
+            <article>
+                <head>
+                    <h3>Articulo 1</h3>
+                </head>
+                <main>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit veniam omnis molestiae corporis numquam error, quis ea earum hic ab quidem nihil? Eum non iure voluptatibus aliquam earum quaerat. Quam.</p>
+                </main>
+                <footer>
+                    <p>Publicado por X</p>
+                </footer>
+            </article>
+            <aside>
+                <h3>Barra lateral</h3>
+                <p>contenido barra lateral</p>
+            </aside>
+        </section>
+    </main>
+    <footer>
+        <!--agregar los derechos de autor o enlaces secundarios aqui-->
+        <p>HTML todos los derechos reservados 2024 </p>
+    </footer>
+    
+    <!--AGREGAR JAVA SCRIPT FILE-->
+    <script src="js/script.js"></script>
+</body>
+</html>
